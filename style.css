@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    margin-top: 100px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .logo-img {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  height: auto;
+}
+
+  .logo {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  .contact-info {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-info:hover {
+    transform: scale(1.2);
+  }
+  
+  .contact-info .icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #777;
+  }
+  
+  .copy-text {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .icon {
+    display: inline-block;
+  }
+
+  .progress-bar {
+    height: 10px;
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .progress-label {
+    position: absolute;
+    top: -20px;
+    color: #333;
+    font-size: 12px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #f39c12;
+    width: 0;
+    position: relative;
+    animation: fillProgress 2s ease-out forwards;
+  }
+  
+  @keyframes fillProgress {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 85%; /* Adjust the width as needed */
+    }
+  }
+  
+  .progress-label:first-child {
+    left: 0;
+  }
+  
+  .progress-label:last-child {
+    right: 0;
+  }
